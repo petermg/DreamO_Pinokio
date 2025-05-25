@@ -67,15 +67,14 @@ module.exports = {
         return [{
           default: true,
           icon: "fa-solid fa-power-off",
-          text: "Start",
-          href: "start.js",
-        }, {
-          icon: "fa-solid fa-power-off",
           text: "Start - Quantized (Pretty much the only one that will work on consumer GPUs)",
           href: "start.js",
 		  params: {
 			mode: "quantized",
-          }
+          }}, {
+          icon: "fa-solid fa-power-off",
+          text: "Start - NON Quantized (Just don't do it)",
+          href: "start.js",
         }, {
           icon: "fa-solid fa-plug",
           text: "Update",

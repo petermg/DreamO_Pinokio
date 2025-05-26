@@ -67,10 +67,16 @@ module.exports = {
         return [{
           default: true,
           icon: "fa-solid fa-power-off",
-          text: "Start - Quantized (Pretty much the only one that will work on consumer GPUs)",
+          text: "Start - 24GB VRAM Quantized",
           href: "start.js",
 		  params: {
 			mode: "quantized",
+          }}, {
+          icon: "fa-solid fa-power-off",
+          text: "Start - 16GB VRAM Quantized",
+          href: "start.js",
+		  params: {
+			mode: "lowvram",
           }}, {
           icon: "fa-solid fa-power-off",
           text: "Start - NON Quantized (Just don't do it)",

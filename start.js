@@ -8,7 +8,7 @@ module.exports = {
         env: { },                   // Edit this to customize environment variables (see documentation)
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
-          "python {{args.mode === 'quantized' ? 'app.py --int8 --debug' : 'app.py'}}",
+          "python {{args.mode === 'quantized' ? 'app.py --int8 --debug' : 'lowvram' ? 'app.py --int8 --offload --debug' : 'app.py'}}",
         ],
         on: [{
           // The regular expression pattern to monitor.
